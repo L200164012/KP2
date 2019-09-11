@@ -44,9 +44,9 @@ License: You must have a valid license purchased only from themeforest(the above
         <link href="{% static 'assets/layouts/layout4/css/custom.min.css' %}" rel="stylesheet" type="text/css" />
         <!-- END THEME LAYOUT STYLES -->
         <link rel="shortcut icon" href="favicon.ico" />
-        <!-- ADDITIONAL -->
+        <!-- ADDITIONAL HEAD-->
         {% block title %}{% endblock %}
-        <!-- END ADDITIONAL -->
+        <!-- END ADDITIONAL HEAD-->
       </head>
     <!-- END HEAD -->
 
@@ -127,6 +127,9 @@ License: You must have a valid license purchased only from themeforest(the above
         <script src="{% static 'assets/layouts/global/scripts/quick-sidebar.min.js' %}" type="text/javascript"></script>
         <script src="{% static 'assets/layouts/global/scripts/quick-nav.min.js' %}" type="text/javascript"></script>
         <!-- END THEME LAYOUT SCRIPTS -->
+        <!-- BEGIN ADDITIONAL SCRIPTS -->
+        {% block script %}{% endblock %}
+        <!-- END ADDITIONAL SCRIPTS -->
     </body>
 
 </html>
