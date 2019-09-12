@@ -4,6 +4,7 @@
 <!-- BEGIN PAGE LEVEL PLUGINS -->
 <link href="{% static 'assets/global/plugins/select2/css/select2.min.css' %}" rel="stylesheet" type="text/css" />
 <link href="{% static 'assets/global/plugins/select2/css/select2-bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css' %}" rel="stylesheet" type="text/css" />
 <!-- END PAGE LEVEL PLUGINS -->
 {% endblock %}
 {% block content %}
@@ -158,11 +159,11 @@
                                                 <a href="#tab2" data-toggle="tab" class="step">
                                                     <span class="number"> 2 </span>
                                                     <span class="desc">
-                                                        <i class="fa fa-check"></i> Profile Setup </span>
+                                                        <i class="fa fa-check"></i> Alamat </span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#tab3" data-toggle="tab" class="step active">
+                                                <a href="#tab3" data-toggle="tab" class="step">
                                                     <span class="number"> 3 </span>
                                                     <span class="desc">
                                                         <i class="fa fa-check"></i> Pilihan Program Studi </span>
@@ -172,7 +173,7 @@
                                                 <a href="#tab4" data-toggle="tab" class="step">
                                                     <span class="number"> 4 </span>
                                                     <span class="desc">
-                                                        <i class="fa fa-check"></i> Confirm </span>
+                                                        <i class="fa fa-check"></i> Upload Data Verifikasi </span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -219,7 +220,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label col-md-3">Agama</label>
+                                                    <label class="control-label col-md-3">Agama
+                                                        <span class="required"> * </span></label>
                                                     <div class="col-md-4">
                                                         <select name="agama" id="Agama" class="form-control">
                                                             <option value=""></option>
@@ -242,14 +244,16 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label col-md-3">Tanggal Lahir</label>
+                                                    <label class="control-label col-md-3">Tanggal Lahir
+                                                        <span class="required"> * </span></label>
                                                     <div class="col-md-4">
                                                         <input class="form-control" id="mask_date" type="text" name="tanglahir"/>
                                                         <span class="help-block"> Tanggal/Bulan/Tahun </span>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label col-md-3">Kewarganegaraan</label>
+                                                    <label class="control-label col-md-3">Kewarganegaraan
+                                                        <span class="required"> * </span></label>
                                                     <div class="col-md-4">
                                                         <select name="warganegara" id="warganegara" class="form-control">
                                                             <option value=""></option>
@@ -516,7 +520,7 @@
                                                         <span class="required"> * </span>
                                                     </label>
                                                     <div class="col-md-4">
-                                                        <select name="prodi" id="program_studi" class="form-control">
+                                                        <select name="prov" id="alamat1" class="form-control">
                                                             <option value=""></option>
                                                             <option value="jtg">Jawa Tengah</option>
                                                             <option value="jkt">Jakarta</option>
@@ -530,7 +534,7 @@
                                                         <span class="required"> * </span>
                                                     </label>
                                                     <div class="col-md-4">
-                                                        <select name="prodi" id="program_studi" class="form-control">
+                                                        <select name="kota" id="alamat2" class="form-control">
                                                             <option value=""></option>
                                                             <option value="jtg">Jawa Tengah</option>
                                                             <option value="jkt">Jakarta</option>
@@ -544,7 +548,7 @@
                                                         <span class="required"> * </span>
                                                     </label>
                                                     <div class="col-md-4">
-                                                        <select name="prodi" id="program_studi" class="form-control">
+                                                        <select name="kec" id="alamat3" class="form-control">
                                                             <option value=""></option>
                                                             <option value="jtg">Jawa Tengah</option>
                                                             <option value="jkt">Jakarta</option>
@@ -558,7 +562,7 @@
                                                         <span class="required"> * </span>
                                                     </label>
                                                     <div class="col-md-4">
-                                                        <select name="prodi" id="program_studi" class="form-control">
+                                                        <select name="kel" id="alamat4" class="form-control">
                                                             <option value=""></option>
                                                             <option value="jtg">Jawa Tengah</option>
                                                             <option value="jkt">Jakarta</option>
@@ -570,21 +574,21 @@
                                                 <div class="form-group">
                                                 <label class="control-label col-md-3">RT</label>
                                                     <div class="col-md-4">
-                                                        <input class="form-control" id="mask_number" type="text">
+                                                        <input class="form-control" id="mask_number" type="text" name="rt">
                                                         <span class="help-block"> Masukkan nomor RT </span>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                 <label class="control-label col-md-3">RW</label>
                                                     <div class="col-md-4">
-                                                        <input class="form-control" id="mask_number" type="text">
+                                                        <input class="form-control" id="mask_number" type="text" name="rw">
                                                         <span class="help-block"> Masukkan nomor RW </span>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="col-md-3 control-label">Jalan</label>
                                                     <div class="col-md-4">
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" name="jalan">
                                                         <span class="help-block"> Masukkan jalan pada alamat anda </span>
                                                     </div>
                                                 </div>
@@ -630,7 +634,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="form-group">
-                                                                <label class="control-label col-md-3">Agama</label>
+                                                                <label class="control-label col-md-3">Agama:</label>
                                                                 <div class="col-md-4">
                                                                     <p class="form-control-static" data-display="agama"> </p>
                                                                 </div>
@@ -670,24 +674,72 @@
                                                                 <div class="col-md-4">
                                                                     <p class="form-control-static" data-display="namaibu"> </p>
                                                                 </div>
+                                                            </div><h4 class="form-section">Alamat</h4>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">Provinsi:</label>
+                                                                <div class="col-md-4">
+                                                                    <p class="form-control-static" data-display="prov"> </p>
+                                                                </div>
                                                             </div>
                                                             <div class="form-group">
-                                                                <label class="control-label col-md-3">File KTP</label>
-                                                                <div class="col-md-3">
+                                                                <label class="control-label col-md-3">Kota:</label>
+                                                                <div class="col-md-4">
+                                                                    <p class="form-control-static" data-display="kota"> </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">Kecamatan:</label>
+                                                                <div class="col-md-4">
+                                                                    <p class="form-control-static" data-display="kec"> </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">Kelurahan</label>
+                                                                <div class="col-md-4">
+                                                                    <p class="form-control-static" data-display="kel"> </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">RT:</label>
+                                                                <div class="col-md-4">
+                                                                    <p class="form-control-static" data-display="rt"> </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">RW:</label>
+                                                                <div class="col-md-4">
+                                                                    <p class="form-control-static" data-display="rw"> </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">Jalan:</label>
+                                                                <div class="col-md-4">
+                                                                    <p class="form-control-static" data-display="jalan"> </p>
+                                                                </div>
+                                                            </div>
+                                                            <h4 class="form-section">Pilihan Program Studi</h4>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">Program Studi Pilihan:</label>
+                                                                <div class="col-md-4">
+                                                                    <p class="form-control-static" data-display="prodi"> </p>
+                                                                </div>
+                                                            </div>
+                                                            <h4 class="form-section">Upload Data Verifikasi</h4>
+                                                            <div class="form-group last">
+                                                                <label class="control-label col-md-3">Upload KTP:</label>
+                                                                <div class="col-md-9">
                                                                     <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                                        <div class="input-group input-large">
-                                                                            <div class="form-control uneditable-input input-fixed input-medium" data-trigger="fileinput">
-                                                                                <i class="fa fa-file fileinput-exists"></i>&nbsp;
-                                                                                <span class="fileinput-filename"> </span>
-                                                                            </div>
-                                                                            <span class="input-group-addon btn default btn-file">
-                                                                                <span class="fileinput-new"> Pilih File </span>
-                                                                                <span class="fileinput-exists"> Ubah </span>
-                                                                                <input type="file" name="..."> </span>
-                                                                            <a href="javascript:;" class="input-group-addon btn red fileinput-exists" data-dismiss="fileinput"> Hapus </a>
+                                                                        <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                                                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" /> </div>
+                                                                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
+                                                                        <div>
+                                                                <span class="btn default btn-file">
+                                                                    <span class="fileinput-new"> Pilih gambar </span>
+                                                                    <span class="fileinput-exists"> Ubah </span>
+                                                                    <input type="file" name="..."> </span>
+                                                                            <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput"> Hapus </a>
                                                                         </div>
                                                                     </div>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
