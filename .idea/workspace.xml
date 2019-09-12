@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30d5105b-04c6-4666-b5ab-85e672196857" name="Default Changelist" comment="">
+    <list default="true" id="30d5105b-04c6-4666-b5ab-85e672196857" name="Default Changelist" comment="form registration 2 and 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/formWizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/formWizard.html" afterDir="false" />
     </list>
@@ -30,13 +30,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/formWizard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="266" column="66" lean-forward="true" selection-start-line="266" selection-start-column="66" selection-end-line="266" selection-end-column="66" />
+            <state relative-caret-position="60">
+              <caret line="453" column="18" selection-start-line="453" selection-start-column="18" selection-end-line="453" selection-end-column="18" />
               <folding>
-                <element signature="e#83771#83777#0" expanded="true" />
-                <element signature="e#86758#86764#0" expanded="true" />
-                <element signature="e#86854#86860#0" expanded="true" />
-                <element signature="e#86861#86867#0" expanded="true" />
+                <element signature="e#32166#32172#0" expanded="true" />
+                <element signature="e#32262#32268#0" expanded="true" />
+                <element signature="e#32269#32275#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,7 +66,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -84,6 +82,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -119,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568271458813</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="form registration 2 and 3">
+      <created>1568271721225</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568271721225</updated>
+    </task>
+    <task id="LOCAL-00003" summary="form registration 2 and 3">
+      <created>1568271830777</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568271830777</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -134,8 +147,8 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17410715" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.17410715" />
+      <window_info id="Structure" order="1" sideWeight="0.5032258" side_tool="true" visible="true" weight="0.17410715" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -145,7 +158,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872504" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872504" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.21198156" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.52380955" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -170,13 +183,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/formWizard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="266" column="66" lean-forward="true" selection-start-line="266" selection-start-column="66" selection-end-line="266" selection-end-column="66" />
+        <state relative-caret-position="60">
+          <caret line="453" column="18" selection-start-line="453" selection-start-column="18" selection-end-line="453" selection-end-column="18" />
           <folding>
-            <element signature="e#83771#83777#0" expanded="true" />
-            <element signature="e#86758#86764#0" expanded="true" />
-            <element signature="e#86854#86860#0" expanded="true" />
-            <element signature="e#86861#86867#0" expanded="true" />
+            <element signature="e#32166#32172#0" expanded="true" />
+            <element signature="e#32262#32268#0" expanded="true" />
+            <element signature="e#32269#32275#0" expanded="true" />
           </folding>
         </state>
       </provider>
