@@ -212,9 +212,9 @@
                                                     <div class="col-md-4">
                                                         <div class="radio-list">
                                                             <label>
-                                                                <input type="radio" name="Gender" value="P" data-title="Pria" /> Pria </label>
+                                                                <input type="radio" name="gender" value="P" data-title="Pria" /> Pria </label>
                                                             <label>
-                                                                <input type="radio" name="Gender" value="W" data-title="Wanita" /> Wanita </label>
+                                                                <input type="radio" name="gender" value="W" data-title="Wanita" /> Wanita </label>
                                                         </div>
                                                         <div id="form_gender_error"> </div>
                                                     </div>
@@ -253,7 +253,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label col-md-3">Kewarganegaraan
-                                                        <span class="required"> * </span></label>
+                                                        <span class="required" aria-required="true"> * </span></label>
                                                     <div class="col-md-4">
                                                         <select name="warganegara" id="warganegara" class="form-control">
                                                             <option value=""></option>
@@ -630,19 +630,13 @@
                                                             <div class="form-group">
                                                                 <label class="control-label col-md-3">Jenis Kelamin:</label>
                                                                 <div class="col-md-4">
-                                                                    <p class="form-control-static" data-display="Gender"> </p>
+                                                                    <p class="form-control-static" data-display="gender"> </p>
                                                                 </div>
                                                             </div>
                                                             <div class="form-group">
                                                                 <label class="control-label col-md-3">Agama:</label>
                                                                 <div class="col-md-4">
                                                                     <p class="form-control-static" data-display="agama"> </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label col-md-3">Nomor Handphone:</label>
-                                                                <div class="col-md-4">
-                                                                    <p class="form-control-static" data-display="nohp"> </p>
                                                                 </div>
                                                             </div>
                                                             <div class="form-group">
@@ -726,7 +720,8 @@
                                                             </div>
                                                             <h4 class="form-section">Upload Data Verifikasi</h4>
                                                             <div class="form-group last">
-                                                                <label class="control-label col-md-3">Upload KTP:</label>
+                                                                <label class="control-label col-md-3">Upload KTP:
+                                                                <span class="required"> * </span></label>
                                                                 <div class="col-md-9">
                                                                     <div class="fileinput fileinput-new" data-provides="fileinput">
                                                                         <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
