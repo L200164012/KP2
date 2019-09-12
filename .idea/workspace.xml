@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30d5105b-04c6-4666-b5ab-85e672196857" name="Default Changelist" comment="form registration 2 and 3">
+    <list default="true" id="30d5105b-04c6-4666-b5ab-85e672196857" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/formWizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/formWizard.html" afterDir="false" />
     </list>
@@ -112,6 +112,14 @@
       <option name="presentableId" value="Default" />
       <updated>1568186087108</updated>
     </task>
+    <task id="LOCAL-00001" summary="form registration 2 and 3">
+      <created>1568271458813</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568271458813</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -136,8 +144,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872504" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32872504" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.21198156" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872504" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.21198156" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -146,7 +154,8 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="form registration 2 and 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="form registration 2 and 3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/base.html">
