@@ -151,7 +151,7 @@
                                                 <a href="#tab1" data-toggle="tab" class="step">
                                                     <span class="number"> 1 </span>
                                                     <span class="desc">
-                                                        <i class="fa fa-check"></i> Data Personal </span>
+                                                        <i class="fa fa-check"></i> Account Setup </span>
                                                 </a>
                                             </li>
                                             <li>
@@ -500,7 +500,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label col-md-3">Nama Ibu
+                                                    <label class="control-label col-md-3">Email
                                                         <span class="required"> * </span>
                                                     </label>
                                                     <div class="col-md-4">
@@ -605,6 +605,10 @@
                                                         <span class="help-block"> Masukkan program studi anda </span>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab4">
+                                                <h3 class="block">Confirm your account</h3>
+                                                <h4 class="form-section">Account</h4>
                                                 <div class="form-group">
                                                     <label class="control-label col-md-3">Username:</label>
                                                     <div class="col-md-4">
@@ -627,100 +631,68 @@
                                                 <div class="form-group">
                                                     <label class="control-label col-md-3">Gender:</label>
                                                     <div class="col-md-4">
-                                                        <div class="checkbox-list">
-                                                            <label>
-                                                                <input type="checkbox" name="payment[]" value="1" data-title="Auto-Pay with this Credit Card." /> Auto-Pay with this Credit Card </label>
-                                                            <label>
-                                                                <input type="checkbox" name="payment[]" value="2" data-title="Email me monthly billing." /> Email me monthly billing </label>
-                                                        </div>
-                                                        <div id="form_payment_error"> </div>
+                                                        <p class="form-control-static" data-display="gender"> </p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="tab-pane" id="tab4">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                            <h3 class="block">Verifikasi Data</h3>
-                                                            <h4 class="form-section">Data Pribadi</h4>
-                                                            <div class="form-group">
-                                                                <label class="control-label col-md-3">Nama Lengkap:</label>
-                                                                <div class="col-md-4">
-                                                                    <p class="form-control-static" data-display="nama"> </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label col-md-3">NIK:</label>
-                                                                <div class="col-md-4">
-                                                                    <p class="form-control-static" data-display="card_number"> </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label col-md-3">Jenis Kelamin:</label>
-                                                                <div class="col-md-4">
-                                                                    <p class="form-control-static" data-display="Gender"> </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label col-md-3">Agama</label>
-                                                                <div class="col-md-4">
-                                                                    <p class="form-control-static" data-display="agama"> </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label col-md-3">Nomor Handphone:</label>
-                                                                <div class="col-md-4">
-                                                                    <p class="form-control-static" data-display="nohp"> </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label col-md-3">Tempat Lahir:</label>
-                                                                <div class="col-md-4">
-                                                                    <p class="form-control-static" data-display="temlahir"> </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label col-md-3">Tanggal Lahir:</label>
-                                                                <div class="col-md-4">
-                                                                    <p class="form-control-static" data-display="tanglahir"> </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label col-md-3">Kewarganegaraan:</label>
-                                                                <div class="col-md-4">
-                                                                    <p class="form-control-static" data-display="warganegara"> </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label col-md-3">No HP:</label>
-                                                                <div class="col-md-4">
-                                                                    <p class="form-control-static" data-display="nohp"> </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label col-md-3">Nama Ibu:</label>
-                                                                <div class="col-md-4">
-                                                                    <p class="form-control-static" data-display="namaibu"> </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label col-md-3">File KTP</label>
-                                                                <div class="col-md-3">
-                                                                    <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                                        <div class="input-group input-large">
-                                                                            <div class="form-control uneditable-input input-fixed input-medium" data-trigger="fileinput">
-                                                                                <i class="fa fa-file fileinput-exists"></i>&nbsp;
-                                                                                <span class="fileinput-filename"> </span>
-                                                                            </div>
-                                                                            <span class="input-group-addon btn default btn-file">
-                                                                                <span class="fileinput-new"> Pilih File </span>
-                                                                                <span class="fileinput-exists"> Ubah </span>
-                                                                                <input type="file" name="..."> </span>
-                                                                            <a href="javascript:;" class="input-group-addon btn red fileinput-exists" data-dismiss="fileinput"> Hapus </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3">Phone:</label>
+                                                    <div class="col-md-4">
+                                                        <p class="form-control-static" data-display="phone"> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3">Address:</label>
+                                                    <div class="col-md-4">
+                                                        <p class="form-control-static" data-display="address"> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3">City/Town:</label>
+                                                    <div class="col-md-4">
+                                                        <p class="form-control-static" data-display="city"> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3">Country:</label>
+                                                    <div class="col-md-4">
+                                                        <p class="form-control-static" data-display="country"> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3">Remarks:</label>
+                                                    <div class="col-md-4">
+                                                        <p class="form-control-static" data-display="remarks"> </p>
+                                                    </div>
+                                                </div>
+                                                <h4 class="form-section">Billing</h4>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3">Card Holder Name:</label>
+                                                    <div class="col-md-4">
+                                                        <p class="form-control-static" data-display="card_name"> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3">Card Number:</label>
+                                                    <div class="col-md-4">
+                                                        <p class="form-control-static" data-display="card_number"> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3">CVC:</label>
+                                                    <div class="col-md-4">
+                                                        <p class="form-control-static" data-display="card_cvc"> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3">Expiration:</label>
+                                                    <div class="col-md-4">
+                                                        <p class="form-control-static" data-display="card_expiry_date"> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3">Payment Options:</label>
+                                                    <div class="col-md-4">
+                                                        <p class="form-control-static" data-display="payment[]"> </p>
                                                     </div>
                                                 </div>
                                             </div>
