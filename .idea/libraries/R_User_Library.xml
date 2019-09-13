@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 <component name="libraryTable">
   <library name="R User Library">
     <CLASSES />
     <SOURCES />
   </library>
+=======
+<component name="libraryTable">
+  <library name="R User Library">
+    <CLASSES />
+    <SOURCES />
+  </library>
+>>>>>>> 16a129c2c55d55455e0cef16cf6ba711cf01b849
 </component>
